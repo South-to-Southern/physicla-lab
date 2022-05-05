@@ -1,0 +1,68 @@
+.loading {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header_back {
+  height: 81px;
+  width: 1200px;
+  background-color: rgb(248, 230, 230);
+  position: relative;
+}
+.logo {
+  float: left;
+  margin-left: 30px;
+  background-color: blue;
+  background-image: url('#');
+  width: 200px;
+  height: 81px;
+  cursor: pointer;
+}
+.loading_peo,
+.head_image,
+.register {
+  color: #4976e8;
+  font-size: 15px;
+  line-height: 81px;
+  right: 0;
+  float: right;
+  margin-right: 20px;
+  background-color: transparent;
+  font-family: 'icomoon';
+}
+.Info {
+  height: 380px;
+  width: 1200px;
+  background-image: url('#');
+  background-repeat: no-repeat;
+  background-color: grey;
+  position: relative;
+}
+.autoplay {
+  width: 421px;
+  height: 100%;
+  background-color: skyblue;
+  position: relative;
+}
+.videolable {
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  font-weight: bold;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.video {
+  width: 346px;
+  height: 218px;
+  position: absolute;
+  left: 50%;
+  margin-left: -173px;
+  top: 50%;
+  margin-top: -109px;
+}
+.Infoma {
+  width: 779px;
+  height: 380px;
+  background-color: aqua;
+  position: absolute;
+}

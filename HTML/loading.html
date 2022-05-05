@@ -5,18 +5,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>登陆系统</title>
+  <title>物理实验平台</title>
   <link rel="stylesheet" href="../css/intital.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/loading.css">
+  <link rel="shortcut icon" href="../image/favicon.ico">
+  <style>
+    @font-face {
+      font-family: 'icomoon';
+      src: url('../fonts/icomoon.eot?h7d129');
+      src: url('../fonts/icomoon.eot?h7d129#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?h7d129') format('truetype'),
+        url('../fonts/icomoon.woff?h7d129') format('woff'),
+        url('../fonts/icomoon.svg?h7d129#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+  </style>
 </head>
 
 <body>
   <script src="../node_modules/three/build/three.js"></script>
   <script type="text/javascript" src="../js/loading.js"></script>
-  <a href="physical.html" target="blank">实验平台</a>
-  <a href="student.html">学生系统</a>
-  <a href="teacher.html">教师系统</a>
+  <div class="loading">
+    <div class="header_back">
+      <a class="logo" href="loading.html" title="物理实验平台"></a>
+      <ul>
+        <li><button onclick="register" class="register">注册</button></li>
+        <li><button onclick="loading" class="loading_peo">登录</button></li>
+        <li><span class="head_image"></span></li>
+      </ul>
+    </div>
+    <div class="Info">
+      <div class="autoplay">
+        <span class="videolable">实验简介视频</span>
+        <video src="#" controls="controls" autoplay="autoplay" class="video" muted="muted"></video>
+      </div>
+      <div class="Infoma">
+        <h2 class="Infotitle">****************</h2>
+        <p class="Infomation">****************</p>
+        <button class="start"></button>
+      </div>
+    </div>
+
+    <!-- <div class="title">
+      <h4>物理仿真平台</h4>
+      <h6>PHYSICAL SIMULATION EXPERIMENT ONLINE</h6>
+    </div>
+
+    <div class="account">
+      <label class="acc" for="account">
+        <image src="../image/loading/lable1.png" />
+      </label>
+      <input type="required autofocus text" placeholder="输入你的账号" id="account" />
+    </div>
+
+    <div class="password">
+      <label class="pass" for="password">
+        <image src="../image/loading/lable2.png" />
+      </label>
+      <input type="required autofocus password" placeholder="输入你的密码" id="password" />
+    </div>
+
+    <div class="launch"></div>
+    <div class="explain"></div> -->
+  </div>
 </body>
 
 </html>

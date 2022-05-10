@@ -27,17 +27,19 @@
 
 <body>
   <script src="../node_modules/three/build/three.js"></script>
-  <script type="text/javascript" src="../js/loading.js"></script>
+
   <div class="loading">
+    <!-- 导航栏 -->
     <div class="header_back">
       <a class="logo" href="loading.html" title="物理实验平台"></a>
       <ul>
-        <li><button onclick="register" class="register">注册</button></li>
-        <li><button onclick="loading" class="loading_peo">登录</button></li>
-        <li><span class="head_image"></span></li>
+        <li><button onclick="loading()" id="loading_peo" class="loading_peo">登录</button></li>
+        <li>
+          <button class="head_image" onclick="loading()"></button>
+        </li>
       </ul>
     </div>
-
+    <!-- 标签介绍 -->
     <div class="Info">
       <div class="autoplay">
         <span class="videolable">实验简介视频</span>
@@ -48,47 +50,78 @@
           发展量子科技、培养专业人才是国家战略需求。本项目依托南邮省级物理实验教学示范中心，以团队在量子物理研究和《物理实验》等课程教学的长期积累为基础，根据量子振荡跃迁实验路径，采用虚拟仿真技术设计了“认知-分析-综合-探索”四层次递进式实验模块，弥补了实体实验因高成本、要求极端苛刻、现实不可及而难以开展的短板，实现了前沿科研反哺实验教学，将立德树人和以学生为中心的教学理念贯穿教学全过程。
         </p>
         <h2 class="Infotitle">超冷原子量子振荡跃迁虚拟仿真实验</h2>
-        <button class="start" onclick="start">开始实验</button>
+        <button class="start" onclick="loading()">开始实验</button>
       </div>
     </div>
-    <!-- <div class="title">
-      <h4>物理仿真平台</h4>
-      <h6>PHYSICAL SIMULATION EXPERIMENT ONLINE</h6>
+    <!-- 登录模块 -->
+    <div class="background"></div>
+    <div class="launch">
+      <button id="quit" class="quit" onclick="quit()"></button>
+      <!-- 标题 -->
+      <div class="title">
+        <h4>物理仿真平台</h4>
+        <h6>PHYSICAL SIMULATION EXPERIMENT ONLINE</h6>
+      </div>
+      <!-- 选择学生/教师系统 -->
+      <div class="choosesystem">
+        <label for="student"> <input name="link" type="radio" id="student" />学生实验端</label>
+        <label for="teacher"> <input name="link" type="radio" id="teacher" />教师管理端</label>
+      </div>
+      <!--账号 -->
+      <div class="account">
+        <label class="acc" for="account">
+          <image src="../image/loading/lable1.png" />
+        </label>
+        <input type="required autofocus text" placeholder="输入你的账号" id="account" value="" />
+      </div>
+      <!-- 密码 -->
+      <div class="password">
+        <label class="pass" for="password">
+          <image src="../image/loading/lable2.png" />
+        </label>
+        <input type="password" placeholder="输入你的密码" id="password" value="" />
+      </div>
+      <button class="signin" onclick="next()">SignIn</button>
+      <div class="msg">
+        <ul>
+          <li>提示</li>
+          <li>学生端与教师端账号密码相同</li>
+          <li>账号：123456</li>
+          <li>密码：123456</li>
+        </ul>
+        <button class="close" onclick="closedown()">关闭</button>
+      </div>
     </div>
-
-    <div class="account">
-      <label class="acc" for="account">
-        <image src="../image/loading/lable1.png" />
-      </label>
-      <input type="required autofocus text" placeholder="输入你的账号" id="account" />
-    </div>
-
-    <div class="password">
-      <label class="pass" for="password">
-        <image src="../image/loading/lable2.png" />
-      </label>
-      <input type="required autofocus password" placeholder="输入你的密码" id="password" />
-    </div>
-
-    <div class="launch"></div>
-    <div class="explain"></div> -->
+    <!-- 主题模块 -->
     <section>
       <div class="leader">
         <ul>
-          <li><button onclick="">实验简介</button></li>
-          <li><button onclick="">教学目标</button></li>
-          <li><button onclick="">实验原理</button></li>
-          <li><button onclick="">实验过程</button></li>
-          <li><button onclick="">实验步骤</button></li>
-          <li><button onclick="">实验结论</button></li>
+          <li class="current">实验简介</li>
+          <li>教学目标</li>
+          <li>实验原理</li>
+          <li>实验过程</li>
+          <li>实验步骤</li>
+          <li>实验结论</li>
         </ul>
       </div>
+      <div class="content">
+        <div class="item">实验简介模块</div>
+        <div class="noitem">教学目标模块</div>
+        <div class="noitem">实验原理模块</div>
+        <div class="noitem">实验过程模块</div>
+        <div class="noitem">实验步骤模块</div>
+        <div class="noitem">实验结论模块</div>
+      </div>
     </section>
-
-
-
-
+    <!-- 评论模块 -->
+    <comment>
+    </comment>
+    <!-- 底部模块 -->
+    <footer>
+      <span>PHYSICAL SIMULATION EXPERIMENT ONLINE &nbsp;&nbsp;<a href="#">@physical lab</a></span>
+    </footer>
   </div>
+  <script type="text/javascript" src="../js/loading.js"></script>
 </body>
 
 </html>

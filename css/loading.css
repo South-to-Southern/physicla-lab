@@ -104,13 +104,149 @@
 .leader {
   border-bottom: 2px solid gray;
   height: 51px;
+  background-color: gray;
 }
 section ul li {
   float: left;
-  padding-left: 20px;
-  margin-top: 20px;
-
   width: 100px;
   height: 51px;
+  padding: 20px;
   cursor: pointer;
+  font-size: 15px;
+}
+.current {
+  background-color: red;
+  z-index: 1;
+}
+
+section ul li:hover {
+  z-index: 1;
+  border-bottom: 2px solid blue;
+}
+.item {
+  display: block;
+}
+.noitem {
+  display: none;
+}
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: #000;
+  opacity: 0.75;
+  display: none;
+}
+
+.launch {
+  display: none;
+  background-repeat: no-repeat;
+  background-image: url('../image/loading/background.png');
+  width: 678px;
+  height: 482px;
+  left: 50%;
+  margin-left: -339px;
+  position: fixed;
+  background-size: cover;
+  top: 50%;
+  margin-top: -241px;
+  background-color: transparent;
+  border-radius: 2px;
+  z-index: 9999;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.quit {
+  font-family: 'icomoon';
+  font-size: 60px;
+  color: black;
+  background-color: transparent;
+  position: absolute;
+  left: 580px;
+  top: 40px;
+}
+.choosesystem {
+  position: absolute;
+  left: 400px;
+  top: 200px;
+}
+.choosesystem label {
+  padding-left: 20px;
+}
+.title h4 {
+  position: absolute;
+  left: 380px;
+  letter-spacing: 1em;
+  top: 100px;
+  font-size: 22px;
+}
+.title h6 {
+  position: absolute;
+  left: 360px;
+  top: 130px;
+  font-size: 10px;
+}
+.acc {
+  position: absolute;
+  left: 360px;
+  top: 250px;
+}
+.account input {
+  position: absolute;
+  left: 420px;
+  top: 260px;
+  height: 30px;
+}
+.pass {
+  position: absolute;
+  left: 360px;
+  top: 330px;
+}
+.password input {
+  position: absolute;
+  left: 420px;
+  top: 350px;
+  height: 30px;
+}
+.signin {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  top: 420px;
+  left: 450px;
+  border: 1px solid black;
+}
+
+.signin:hover {
+  background-color: blue;
+}
+.msg {
+  display: none;
+  width: 300px;
+  height: 150px;
+  margin: 100 auto;
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  left: 200px;
+  opacity: 0.75;
+}
+.close {
+  background-color: aqua;
+  border: 1px solid black;
+  padding: 1px 10px;
+  float: right;
+}
+footer {
+  width: 1200px;
+  height: 30px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  border-top: 1px solid skyblue;
 }
